@@ -111,7 +111,7 @@
 }
 
 .link:focus {
-  border: 1px solid var(--text-color);
+  outline: 1px solid var(--text-color);
 }
 
 .header__theme-menu {
@@ -136,7 +136,12 @@
 }
 
 .header__theme-menu-button:hover {
-  
+  border: 1px solid var(--btn-hover-border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--btn-focus-border-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -150,7 +155,7 @@
 }
 
 .section-block {
-  margin-bottom: 50px;
+  margin-block-end: 50px;
 }
 
 .section-block:last-child {
@@ -178,11 +183,111 @@
 .gallery-image {
   display: block;
   line-height: 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 @media (width >= 768px) {
+  .header, .footer {
+    padding: 20px;
+    min-block-size: 1024px;
+  }
+
+  .decorated-zone::before {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .decorated-zone::after {
+    right: 20px;
+    top: 20px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 171px;
+  }
+
+  .header .main-heading {
+    margin-inline-start: -20px;
+  }
+
   .main-heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  
+
+  .header__text {
+    justify-self: end;
+    max-width: 364px;
+  }
+
+  .content-wrapper {
+    padding: 60px 20px 0;
+  }
+
+  .section-block {
+    margin-block-end: 80px;
+  }
+
+  .section-block:last-child {
+    margin-bottom: 60px;
+  }
+
+  .hard-concentrate-section,
+  .how-concentrate-section {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: fit-content(var(--subheading-width)) 2fr;
+  }
+
+  .increase-concentrate-section .subheading {
+    max-width: var(--subheading-width);
+    
+  }
+
+  .gallery-items {
+    margin-block-start: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape   books  ice-cream"
+    "tape   street  street"
+    "tape   street  street";
+  }
+
+  .gallery-items__item:nth-child(1) {
+    grid-area: sunset;
+  }
+
+  .gallery-items__item:nth-child(2) {
+    grid-area: ice-cream;
+  }
+
+  .gallery-items__item:nth-child(3) {
+    grid-area: tape;
+  }
+
+  .gallery-items__item:nth-child(4) {
+    grid-area: books;
+  }
+
+  .gallery-items__item:nth-child(5) {
+    grid-area: street;
+  }
+
+  .gallery-image {
+    height: 100%;
+  }
+}
+
+@media (width >= 1024px) {
+  .header, .footer {
+    min-block-size: 768px;
+  }
+  .increase-concentrate-section .article-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

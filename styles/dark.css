@@ -4,4 +4,5 @@
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --heading-color: #DB00FF;
+  --decorated-color: var(--accent-color);
 }

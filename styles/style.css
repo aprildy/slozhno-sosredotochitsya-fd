@@ -1,5 +1,40 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font, serif);
+  background-color: var(--bg-color, #ffeef6);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header, .footer {
+  position: relative;
+  display: grid;
+  block-size: 100vh;
+  min-block-size: 668px;
+}
+
+.footer {
+  justify-items: center;
+  align-items: center;
+}
+
+.decorated-zone {
+
+}
+
+.main-heading {
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+@media (width >= 768px) {
+  .main-heading {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }

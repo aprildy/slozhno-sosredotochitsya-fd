@@ -4,8 +4,10 @@
   --text-color: #353430;
   --accent-color: #FF8DCB;
   --heading-color: #ffc2e6;
+  --subheading-color: var(--text-color);
 
   --main-font: 'IBM Plex mono';
   --font-size: 18px;
   --decorated-color: #353430;
+  --btn-color: var(--text-color);
 }

@@ -1,8 +1,15 @@
 :root.theme-dark {
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --heading-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --subheading-color: var(--accent-color);
+
   --decorated-color: var(--accent-color);
+  --btn-color: var(--accent-color);
+
+  .rec-item {
+    visibility: visible;
+  }
 }

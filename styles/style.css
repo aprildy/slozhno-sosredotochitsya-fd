@@ -17,13 +17,17 @@
   padding: 10px;
 }
 
+.header {
+  grid-template-rows: 1fr min-content 1fr;
+}
+
 .footer {
   justify-items: center;
   align-items: center;
 }
 
 .header__text {
-  align-self: start;
+  align-self: center;
 }
 
 .decorated-zone::before,
@@ -79,6 +83,10 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: .82;
+}
+
+.footer .main-heading {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .subheading {
@@ -171,10 +179,6 @@
   margin-block-end: 10px;
 }
 
-.section-gallery {
-  
-}
-
 .gallery-items {
   display: grid;
   gap: 10px;
@@ -185,6 +189,7 @@
   line-height: 1;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 @media (width >= 768px) {
@@ -201,6 +206,11 @@
   .decorated-zone::after {
     right: 20px;
     top: 20px;
+  }
+
+  .rec-item {
+    right: 48px;
+    top: 21px;
   }
 
   .header__theme-menu {
@@ -248,7 +258,7 @@
     margin-block-start: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: repeat(4, auto);
     gap: 20px;
     grid-template-areas:
     "sunset sunset ice-cream"
@@ -276,16 +286,27 @@
   .gallery-items__item:nth-child(5) {
     grid-area: street;
   }
-
-  .gallery-image {
-    height: 100%;
-  }
 }
 
 @media (width >= 1024px) {
   .header, .footer {
     min-block-size: 768px;
   }
+
+  .header__theme-menu {
+    margin-block-start: 0;
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header__text {
+    max-width: 491px;
+  }
+
   .increase-concentrate-section .article-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

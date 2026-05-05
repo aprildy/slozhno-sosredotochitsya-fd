@@ -10,7 +10,7 @@
   --btn-color: var(--accent-color);
   --btn-hover-border-color: rgba(255, 0, 112, .4);
   --btn-focus-border-color: var(--accent-color);
-  
+
   .rec-item {
     visibility: visible;
   }

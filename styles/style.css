@@ -74,7 +74,7 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  box-shadow: 0 0 2px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .main-heading {
@@ -177,6 +177,10 @@
 
 .article__title {
   margin-block-end: 10px;
+}
+
+.title-concentrate {
+  margin-block-end: 20px;
 }
 
 .gallery-items {

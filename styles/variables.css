@@ -5,11 +5,13 @@
   --accent-color: #ff0070;
   --heading-color: #db00ff;
   --subheading-color: var(--accent-color);
-
+  --main-font: 'IBM Plex mono';
+  --font-size: 18px;
   --decorated-color: var(--accent-color);
   --btn-color: var(--accent-color);
   --btn-hover-border-color: rgba(255, 0, 112, .4);
   --btn-focus-border-color: var(--accent-color);
+  --subheading-width: 236px;
 
   .rec-item {
     visibility: hidden;

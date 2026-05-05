@@ -32,3 +32,9 @@
   }
 }
 
+@media (width >= 1024px) {
+  :root {
+    --subheading-width: 315px;
+  }
+}
+

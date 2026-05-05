@@ -12,7 +12,7 @@
   --btn-focus-border-color: var(--accent-color);
 
   .rec-item {
-    visibility: visible;
+    visibility: hidden;
   }
 }
 

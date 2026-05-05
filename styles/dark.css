@@ -4,12 +4,12 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --heading-color: #db00ff;
-  --subheading-color: var(--accent-color);
-
-  --decorated-color: var(--accent-color);
-  --btn-color: var(--accent-color);
+  --subheading-color: var(--accent-color, #ff0070);
+  --article-title-color: #000028;
+  --decorated-color: var(--accent-color, #ff0070);
+  --btn-color: var(--accent-color, #ff0070);
   --btn-hover-border-color: rgba(255, 0, 112, .4);
-  --btn-focus-border-color: var(--accent-color);
+  --btn-focus-border-color: var(--accent-color, #ff0070);
 
   .rec-item {
     visibility: visible;

@@ -122,6 +122,10 @@
   outline: 1px solid var(--text-color);
 }
 
+.header__text {
+  color: var(--article-title-color);
+}
+
 .header__theme-menu {
   margin-block-start: 65px;
   margin-block-end: 10px;
@@ -176,11 +180,13 @@
 }
 
 .article__title {
+  color: var(--article-title-color);
   margin-block-end: 10px;
 }
 
 .title-concentrate {
   margin-block-end: 20px;
+  color: var(--article-title-color);
 }
 
 .gallery-items {

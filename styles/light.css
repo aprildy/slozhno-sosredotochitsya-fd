@@ -4,10 +4,11 @@
   --text-color: #353430;
   --accent-color: #FF8DCB;
   --heading-color: #ffc2e6;
-  --subheading-color: var(--text-color);
+  --subheading-color: var(--text-color, #353430);
+  --article-title-color: var(--text-color, #353430);
   --decorated-color: #353430;
-  --btn-color: var(--text-color);
-  --btn-focus-border-color: var(--text-color);
+  --btn-color: var(--text-color, #353430);
+  --btn-focus-border-color: var(--text-color, #353430);
   --btn-hover-border-color: rgba(50, 49, 45, .4);
 
   .rec-item {
@@ -22,10 +23,11 @@
     --text-color: #353430;
     --accent-color: #FF8DCB;
     --heading-color: #ffc2e6;
-    --subheading-color: var(--text-color);
+    --subheading-color: var(--text-color, #353430);
+    --article-title-color: var(--text-color, #353430);
     --decorated-color: #353430;
-    --btn-color: var(--text-color);
-    --btn-focus-border-color: var(--text-color);
+    --btn-color: var(--text-color, #353430);
+    --btn-focus-border-color: var(--text-color, #353430);
     --btn-hover-border-color: rgba(50, 49, 45, .4);
   }
 }

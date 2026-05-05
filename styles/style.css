@@ -27,6 +27,7 @@
 }
 
 .header__text {
+  color: var(--article-title-color);
   align-self: center;
 }
 
@@ -120,10 +121,6 @@
 
 .link:focus {
   outline: 1px solid var(--text-color);
-}
-
-.header__text {
-  color: var(--article-title-color);
 }
 
 .header__theme-menu {
